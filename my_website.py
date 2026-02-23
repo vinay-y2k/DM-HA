@@ -22,7 +22,7 @@ def index():
 
 @app.route('/get-data')
 def get_data():
-    file_path = r'C:\Vinay\Python\project1_df.csv'
+    file_path = r'/app/DM-HA/project1_df.csv'
     # Capture URL parameter: 
     output_format = request.args.get('output')
     user_key = request.headers.get('X-API-KEY')
